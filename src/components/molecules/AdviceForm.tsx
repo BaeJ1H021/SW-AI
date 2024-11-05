@@ -137,7 +137,7 @@ const MainHeading = styled.p`
   color: #2f3236;
 
   @media (max-width: 768px) {
-    font-size: 27px;
+    font-size: 22px;
     line-height: 36px;
     overflow-wrap: break-word;
     word-break: keep-all;
@@ -168,9 +168,10 @@ const FormTitle = styled.p`
   color: #585c61;
 
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 17px;
     line-height: 28px;
     color: #2f3236;
+    margin-bottom: 20px;
   }
 `;
 
@@ -189,7 +190,7 @@ const FormInput = styled.input`
   }
 
   @media (max-width: 768px) {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 22px;
     padding: 8px 0 8px 11px;
     margin-bottom: 10px;
@@ -211,7 +212,7 @@ const TextArea = styled.textarea`
   }
 
   @media (max-width: 768px) {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 22px;
     padding: 8px 0 8px 11px;
     height: 140px;
@@ -239,5 +240,6 @@ const SubmitButton = styled.button<{ $isFormValid: boolean }>`
     line-height: 22px;
     padding: 8px 32px;
     width: 120px;
+    margin-top: 10px;
   }
 `;

@@ -14,11 +14,9 @@ const HomePage = () => {
     setIsModalOpen(false);
   };
 
-  const [ip, setIp] = useState("unknown");
+  const [_ip, setIp] = useState("unknown");
   const [mobile, setMobile] = useState("desktop");
   const [utm, setUtm] = useState<string | null>(null);
-  const [email, setEmail] = useState("");
-  const [advice, setAdvice] = useState("");
 
   useEffect(() => {
     // IP 가져오기
@@ -125,7 +123,7 @@ const HomePage = () => {
     }
   };
 
-  const [userId, setUserId] = useState(getUVfromCookie());
+  const [userId, _setUserId] = useState(getUVfromCookie());
 
   return (
     <HomePageContainer>
