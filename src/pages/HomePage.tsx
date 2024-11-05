@@ -16,7 +16,7 @@ const HomePage = () => {
 
   const [_ip, setIp] = useState("unknown");
   const [mobile, setMobile] = useState("desktop");
-  const [utm, setUtm] = useState<string | null>(null);
+  const [_utm, setUtm] = useState<string | null>(null);
 
   useEffect(() => {
     // IP 가져오기
@@ -57,7 +57,7 @@ const HomePage = () => {
         ip: ipAddress,
         referer: document.referrer,
         time_stamp: getTimeStamp(),
-        utm: utm,
+        utm: urlParams.get("utm"),
         device: mobile,
       });
       try {
