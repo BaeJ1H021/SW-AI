@@ -27,11 +27,11 @@ const Modal = ({ onClose }: ModalProps) => {
         </PopupText>
         <PopupText>
           보내주신 의견은 저희에게 큰 도움이 되며, 서비스 개선에 적극 반영할
-          에정입니다.
+          예정입니다.
         </PopupText>
         <PopupText>
           추가로 궁금한 점이나 더 나누고 싶은 의견이 있으시면 언제든지
-          연락주세요. <strong>blueapple99@naver.com</strong>
+          연락주세요.
         </PopupText>
         <CloseButton onClick={onClose}>닫기</CloseButton>
       </PopupContent>

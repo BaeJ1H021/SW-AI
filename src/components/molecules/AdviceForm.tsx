@@ -100,7 +100,7 @@ const AdviceForm = ({ userId, handleOpenModal }: AdviceFormProps) => {
           disabled={!isFormValid}
           $isFormValid={isFormValid}
         >
-          문의하기
+          조언하기
         </SubmitButton>
       </FormContainer>
     </Container>
