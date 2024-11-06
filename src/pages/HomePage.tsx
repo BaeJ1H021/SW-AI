@@ -139,6 +139,6 @@ export default HomePage;
 const HomePageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
   padding: 2rem 4rem;
 `;
