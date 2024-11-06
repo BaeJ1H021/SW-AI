@@ -15,7 +15,7 @@ const HomePage = () => {
   };
 
   const [_ip, setIp] = useState("unknown");
-  const [mobile, setMobile] = useState("desktop");
+  const [_mobile, setMobile] = useState("desktop");
   const [_utm, setUtm] = useState<string | null>(null);
 
   useEffect(() => {
@@ -31,12 +31,14 @@ const HomePage = () => {
       }
     };
 
+    let device = "desktop";
     // 기기 타입 설정
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
       )
     ) {
+      device = "mobile";
       setMobile("mobile");
     }
 
@@ -58,7 +60,7 @@ const HomePage = () => {
         referer: document.referrer,
         time_stamp: getTimeStamp(),
         utm: urlParams.get("utm"),
-        device: mobile,
+        device: device,
       });
       try {
         const response = await axios.get(
