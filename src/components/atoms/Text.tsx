@@ -1,4 +1,4 @@
-import { DefaultTheme, styled } from "styled-components";
+import { DefaultTheme, styled } from 'styled-components';
 
 interface TextProps {
   children: React.ReactNode; // 글자 텍스트
