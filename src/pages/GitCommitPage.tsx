@@ -19,7 +19,7 @@ const GitCommitPage = () => {
   const [commands, setCommands] = useState<
     { command: string; result: string; branch: string }[]
   >([]);
-  const [branch, setBranch] = useState('master');
+  const [branch, _] = useState('master');
   const [isInputDisabled, setIsInputDisabled] = useState(false);
   const [stagedFiles, setStagedFiles] = useState(false);
 

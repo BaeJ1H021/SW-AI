@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BoldText, RegularText } from '../atoms';
+import { BoldText } from '../atoms';
 import { theme } from '../../styles/theme';
 
 const GitCommand = () => {
