@@ -1,5 +1,4 @@
-import "styled-components";
-import { RuleSet } from "styled-components";
+import 'styled-components';
 
 interface Font {
   bold30: RuleSet<object>;
@@ -59,7 +58,7 @@ interface Device {
   desktop: string;
 }
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme {
     color: Color;
     font: Font;
