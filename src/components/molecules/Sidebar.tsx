@@ -21,38 +21,38 @@ const Sidebar = () => {
           <SectionTitle>Git 기초</SectionTitle>
           <HorizontalLine />
           <NavItem $isActive={isActive('/git-init')}>
-            <StyledLink to="/git-init">git 저장소 생성</StyledLink>
+            <StyledLink to="/">git 저장소 생성</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-stage')}>
-            <StyledLink to="/git-stage">파일 스테이징</StyledLink>
+            <StyledLink to="/">파일 스테이징</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-commit')}>
             <StyledLink to="/git-commit">커밋</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-create-branch')}>
-            <StyledLink to="/git-create-branch">브랜치 생성</StyledLink>
+            <StyledLink to="/">브랜치 생성</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-switch-branch')}>
-            <StyledLink to="/git-switch-branch">브랜치 변경</StyledLink>
+            <StyledLink to="/">브랜치 변경</StyledLink>
           </NavItem>
         </NavSection>
         <NavSection>
           <SectionTitle>Git 중급</SectionTitle>
           <HorizontalLine />
           <NavItem $isActive={isActive('/git-undo-commit')}>
-            <StyledLink to="/git-undo-commit">커밋 취소</StyledLink>
+            <StyledLink to="/">커밋 취소</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-stash')}>
-            <StyledLink to="/git-stash">변경 사항 임시 저장</StyledLink>
+            <StyledLink to="/">변경 사항 임시 저장</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-merge')}>
             <StyledLink to="/git-merge">병합</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-rebase')}>
-            <StyledLink to="/git-rebase">리베이스</StyledLink>
+            <StyledLink to="/">리베이스</StyledLink>
           </NavItem>
           <NavItem $isActive={isActive('/git-restore')}>
-            <StyledLink to="/git-restore">파일 되돌리기</StyledLink>
+            <StyledLink to="/">파일 되돌리기</StyledLink>
           </NavItem>
         </NavSection>
         <NavSection>
